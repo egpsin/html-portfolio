@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Anton", "Noto Sans JP", sans-serif;
   font-weight: 400;
@@ -112,6 +116,7 @@ img {
   font-family: "Noto Sans JP";
   font-size: 56px;
   transition: all 0.2s;
+  display: inline-block;
 }
 
 .section-heading:hover {
@@ -120,7 +125,6 @@ img {
 }
 
 .section-heading-d {
-  display: inline-block;
   background-image: linear-gradient(
     90deg,
     rgb(0 191 143 / 0.8),
@@ -131,7 +135,6 @@ img {
 }
 
 .section-heading-l {
-  text-align: center;
   padding-top: 50px;
 }
 
@@ -192,11 +195,21 @@ img {
 .about-text-contents {
   display: flex;
   justify-content: space-between;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 .about-text {
   font-size: 32px;
+}
+
+.about-text-d {
+  color: #717274;
+}
+
+.search__icon {
+  height: 2.25rem;
+  width: 2.25rem;
+  fill: #717274;
 }
 
 .footer {
