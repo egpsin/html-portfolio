@@ -20,15 +20,20 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="header-primary">
-        <span class="header-primary-main">Front-end developer</span>
-        <span class="header-primary-sub">My portfolio</span>
-      </h1>
+      <div class="header-container">
+        <h1 class="header-primary">
+          <span class="header-primary-main">Front-end developer</span>
+          <span class="header-primary-sub">My portfolio</span>
+        </h1>
+        <a href="#portfolio" class="btn"
+          ><svg class="icon">
+            <use
+              xlink:href="./img/sprite.svg#icon-chevron-with-circle-down"
+            ></use></svg
+        ></a>
+      </div>
       <nav class="header-nav inner">
         <ul class="header-nav-list">
-          <li class="header-nav-item">
-            <a href="#portfolio" class="header-nav-link">Portfolio</a>
-          </li>
           <li class="header-nav-item">
             <a href="#about" class="header-nav-link">About me</a>
           </li>
@@ -73,10 +78,10 @@
             趣味：<br />
             クリプト相場の相場観や<br />
             学習記録を呟いています<br />
-            <span
+            <span class="about-link-container"
               ><a href="https://x.com/RyutaMiyamot0" class="about-link"
-                ><svg class="search__icon">
-                  <use xlink:href="./img/sprite.svg/#icon-x"></use>
+                ><svg class="icon">
+                  <use xlink:href="./img/sprite.svg#icon-x"></use>
                 </svg>
                 @RyutaMiyamot0</a
               ></span
