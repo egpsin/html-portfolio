@@ -25,7 +25,7 @@
           <span class="header-primary-main">Front-end developer</span>
           <span class="header-primary-sub">My portfolio</span>
         </h1>
-        <a href="#portfolio" class="btn">
+        <a href="#portfolio" id="scroll-link" class="btn">
           <svg class="icon">
             <use
               xlink:href="./img/sprite.svg#icon-chevron-with-circle-down"
@@ -94,5 +94,19 @@
       </section>
     </main>
     <footer class="footer"></footer>
+    <script>
+      document
+        .getElementById("scroll-link")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          const targetElement = document.getElementById("portfolio");
+          const offset = window.innerHeight * 0.06;
+          const targetPosition = targetElement.offsetTop + offset;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth",
+          });
+        });
+    </script>
   </body>
 </html>
